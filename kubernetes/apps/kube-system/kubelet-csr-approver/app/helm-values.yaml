@@ -1,0 +1,3 @@
+---
+providerRegex: ^(rpi4-01|rpi4-02|rpi4-03)$
+bypassDnsResolution: true
