@@ -6,13 +6,13 @@ talosVersion: v1.8.1
 kubernetesVersion: v1.31.1
 
 clusterName: "rock-home"
-endpoint: https://192.168.1.200:6443
+endpoint: https://192.168.1.219:6443
 clusterPodNets:
   - "10.69.0.0/16"
 clusterSvcNets:
   - "10.96.0.0/16"
 additionalApiServerCertSans: &sans
-  - "192.168.1.200"
+  - "192.168.1.219"
   - 127.0.0.1 # KubePrism
 additionalMachineCertSans: *sans
 
@@ -37,7 +37,7 @@ nodes:
             gateway: "192.168.1.1"
         mtu: 1500
         vip:
-          ip: "192.168.1.200"
+          ip: "192.168.1.219"
   - hostname: "rpi4-02"
     ipAddress: "192.168.1.83"
     installDisk: "/dev/sda"
@@ -54,7 +54,7 @@ nodes:
             gateway: "192.168.1.1"
         mtu: 1500
         vip:
-          ip: "192.168.1.200"
+          ip: "192.168.1.219"
   - hostname: "rpi4-03"
     ipAddress: "192.168.1.84"
     installDisk: "/dev/sda"
@@ -71,7 +71,7 @@ nodes:
             gateway: "192.168.1.1"
         mtu: 1500
         vip:
-          ip: "192.168.1.200"
+          ip: "192.168.1.219"
 
 # Global patches
 patches:
