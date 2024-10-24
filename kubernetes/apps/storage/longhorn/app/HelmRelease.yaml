@@ -42,6 +42,6 @@ spec:
       annotations:
         external-dns.alpha.kubernetes.io/target: ${NGINX_INTERNAL_ADDR}
       ingressClassName: internal
-      host: longhorn.ironstone.casa
+      host: longhorn.${SECRET_DOMAIN}
       tls: true
       tlsSecretName: "network/ironstone-casa-production-tls"
